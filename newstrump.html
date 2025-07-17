@@ -1,4 +1,47 @@
-<blockquote class="twitter-timeline" data-theme="light" data-chrome="nofooter noborders">
-  <a href="https://twitter.com/realDonaldTrump">Tweets by realDonaldTrump</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trump Twitter Feed</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f4;
+    }
+
+    .twitter-container {
+      width: 400px;
+      height: 600px;
+      overflow-y: scroll;
+      border: 1px solid #ddd;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="twitter-container">
+    <a 
+      class="twitter-timeline"
+      href="https://twitter.com/realDonaldTrump"
+      data-tweet-limit="15"
+      data-chrome="noheader nofooter transparent"
+      data-theme="light"
+    >
+      Tweets by @realDonaldTrump
+    </a>
+  </div>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
